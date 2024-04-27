@@ -672,3 +672,6 @@
 [24-Jun-2022 19:12:58 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/dgvrohtak/public_html/kids_college/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php on line 177
 [25-Jun-2022 00:55:20 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/dgvrohtak/public_html/kids_college/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php on line 177
 [25-Jun-2022 00:55:48 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/dgvrohtak/public_html/kids_college/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php on line 177
+[27-Apr-2024 18:11:59 UTC] PHP Warning:  Module "memcached" is already loaded in Unknown on line 0
+[27-Apr-2024 18:12:31 UTC] PHP Warning:  Module "memcached" is already loaded in Unknown on line 0
+[27-Apr-2024 18:15:06 UTC] PHP Warning:  Module "memcached" is already loaded in Unknown on line 0
