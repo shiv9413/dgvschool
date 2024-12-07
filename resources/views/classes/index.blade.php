@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <!-- Inner Heading Start -->
-<div class="innerHeading-wrap">
+<div class="innerHeading-wrap" style="background-color: rgba(3, 22, 67, .9) !important; background:none;">
    <div class="container">
       <h1>
          @if(isset(request()->keyword))
@@ -16,6 +16,13 @@
 <!-- Inner Heading End --> 
 <!-- Inner Content Start -->
 <div class="innerContent-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12">
+                <img src="{{ asset('images/Classes.png') }}" alt="">
+            </div>
+        </div>
+    </div>
    <div class="container">
       <!-- Classes Start -->
       @if(null!==($classes))
@@ -43,9 +50,9 @@
          <div class="pagiWrap">
             <div class="row">
                <div class="col-md-5">
-                  <div class="showreslt">
-                     {{__('Showing Pages')}} : {{ $classes->firstItem() }} - {{ $classes->lastItem() }} {{__('Total')}} {{ $classes->total() }}
-                  </div>
+                  <!--<div class="showreslt">-->
+                  <!--   {{__('Showing Pages')}} : {{ $classes->firstItem() }} - {{ $classes->lastItem() }} {{__('Total')}} {{ $classes->total() }}-->
+                  <!--</div>-->
                </div>
                <div class="col-md-7 text-right">
                   @if(isset($classes) && count($classes))

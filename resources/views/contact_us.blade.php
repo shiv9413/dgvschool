@@ -9,7 +9,7 @@
 @endpush
 @section('content')
 <!-- Inner Heading Start -->
-<div class="innerHeading-wrap">
+<div class="innerHeading-wrap" style="background-color: rgba(3, 22, 67, .9) !important; background:none;">
   <div class="container">
     <h1>{{__('Contact Us')}}</h1>
   </div>
@@ -21,7 +21,7 @@
       <div class="row">
         <div class="col-lg-3 col-md-6 md-mb-30">
           <div class="address-item style">
-            <div class="address-icon"> <i class="fas fa-phone-alt"></i> </div>
+            <div class="address-icon" style="background-color: rgba(3, 22, 67, .9);"> <i class="fas fa-phone-alt"></i> </div>
             <div class="address-text">
               <h3 class="contact-title">{{__('Call Us')}}</h3>
               <ul class="unorderList">
@@ -32,7 +32,7 @@
         </div>
         <div class="col-lg-3 col-md-6 md-mb-30">
           <div class="address-item style">
-            <div class="address-icon"> <i class="far fa-envelope"></i> </div>
+            <div class="address-icon" style="background-color: rgba(3, 22, 67, .9);"> <i class="far fa-envelope"></i> </div>
             <div class="address-text">
               <h3 class="contact-title">{{__('Mail Us')}}</h3>
               <ul class="unorderList">
@@ -43,7 +43,7 @@
         </div>
         <div class="col-lg-3 col-md-6 sm-mb-30">
           <div class="address-item">
-            <div class="address-icon"> <i class="far fa-clock"></i> </div>
+            <div class="address-icon" style="background-color: rgba(3, 22, 67, .9);"> <i class="far fa-clock"></i> </div>
             <div class="address-text">
               <h3 class="contact-title">{{__('Opening Hours')}}</h3>
               <ul class="unorderList">
@@ -55,7 +55,7 @@
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="address-item">
-            <div class="address-icon"> <i class="fas fa-map-marker-alt"></i> </div>
+            <div class="address-icon" style="background-color: rgba(3, 22, 67, .9);"> <i class="fas fa-map-marker-alt"></i> </div>
             <div class="address-text">
               <h3 class="contact-title">{{__('Address')}}</h3>
               <p> {{widget(1)->extra_field_4}}</p>
@@ -68,12 +68,12 @@
       <div class="col-lg-7"> 
         
         <!-- Register Start -->
-        <div class="login-wrap">
+        <div class="login-wrap" style="background-color: rgba(3, 22, 67, .9);">
           <div class="contact-info login_box">
             <div class="contact-form loginWrp registerWrp">
               <form method="post" action="{{route('contact.post')}}" id="contactForm" novalidate="">
                 @csrf
-                <h3>{{__('Get In Touch')}}</h3>
+                <h3 style="color:white;">{{__('Get In Touch')}}</h3>
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="form-group">
