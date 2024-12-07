@@ -9,7 +9,6 @@
 
 .teachers-content h3 {
     font-size: 18px!important;
-    font-weight: 600;
 }
 .power-ribbon-top-left {
     top: -6px;
@@ -106,6 +105,64 @@ ul {
     margin-right: 10px;
     text-align: justify;
 }  
+</style>
+
+<style>
+    .news-section {
+        background-color: rgba(3, 22, 67, 0.9); /* Dark blue with transparency */
+        color: #ffffff; /* White text */
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #ffffff; /* White text for title */
+    }
+
+    .news-container {
+        position: relative;
+        overflow: hidden;
+        height: 200px; /* Adjust as needed */
+    }
+
+    .news-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        animation: scroll-mid 15s linear infinite;
+    }
+
+    .news-list li {
+        padding: 10px 0;
+    }
+
+    .news-list li a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: #ffffff; /* White text for links */
+    }
+
+    .news-list li a:hover {
+        text-decoration: underline;
+    }
+
+    .news-container:hover .news-list {
+        animation-play-state: paused;
+    }
+
+    @keyframes scroll-mid {
+        0% {
+            transform: translateY(50%); /* Start from the middle */
+        }
+        100% {
+            transform: translateY(-100%); /* Scroll to the top */
+        }
+    }
 </style>
 @endpush
 @section('content')
@@ -235,8 +292,50 @@ ul {
             <!--</div>-->
             @endforeach
             @endif
-            <div class="col-md-12 col-sm-12 col-lg-12">
+            <div class="col-md-6 col-sm-6 col-lg-6">
                   <img src="{{ asset('images/school-info.png') }}" alt="">
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6">
+              <div class="news-section">
+                  <h3 class="news-title">Latest News</h3>
+                  <div class="news-container">
+                      <ul class="news-list">
+                          <li>
+                               <b>Admission will open soon!</b>
+                          </li>
+                          <li>
+                                  <b>Congratulations to Students holding high positions in the Olympiad.</b>
+                          </li>
+                          <li>
+                                  <b>Download the New School Mobile App Today! <a href="https://play.google.com/store/apps/details?id=com.schoolknot.dgvschool" target="_blank"><i class="fas fa-share"></i>                                  </a></b>
+                          </li>
+                          <li>
+                                  <b>Winter Break is from 01.01.2025 to 15.01.2025</b>
+                          </li>
+                          <li>
+                            <b>Annual Sports Function - 22nd December 2024</b>
+                          </li>
+                          <li>
+                            <b>Quote of the Week: “Education is the most powerful weapon which you can use to change the world” – Nelson Mandela</b>
+                          </li>
+                          <li>
+                            <b>Join the D.G.V. WhatsApp community for Instant Updates <a href="https://wa.me/918708773237?text=D.G.V.%20School" target="_blank"><i class="fas fa-share"></i>                              </a></b>
+                          </li>
+                          <li>
+                            <b>D.G.V. Food Bank Inauguration on Dec 04, 2024 (Thursday)
+                            </b>
+                          </li>
+                          <li>
+                            <b>
+                            D.G.V. Annual Cultural Function on Dec 15, 2024 (Sunday)
+                            </b>
+                          </li>
+                          <li>
+                            <b>Christmas Celebration on Dec 24, 2024</b>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
             </div>
             <div class="col-md-12 col-sm-12 col-lg-12 mt-2" id="border_custom">
                 <h4 style="color:rgba(3,22,67,.9);"><strong>Our Vision</strong></h4>
@@ -962,6 +1061,15 @@ ul {
     document. getElementById("teacher-section"). remove();
      document. getElementById("course-section"). remove();
      document. getElementById("testimonial-section"). remove();
-     
+     document.addEventListener("DOMContentLoaded", () => {
+        const newsContainer = document.querySelector(".news-container");
+        const newsList = document.querySelector(".news-list");
+        newsContainer.addEventListener("touchstart", () => {
+            newsList.style.animationPlayState = "paused";
+        });
+        newsContainer.addEventListener("touchend", () => {
+            newsList.style.animationPlayState = "running";
+        });
+    });
 </script>
 @endsection
