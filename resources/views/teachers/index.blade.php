@@ -45,7 +45,7 @@
                </div>
                <div class="col-md-7 text-right">
                   @if(isset($teachers) && count($teachers))
-                  {{ $teachers->appends(request()->query())->links() }}
+                  <!--{{ $teachers->appends(request()->query())->links() }}-->
                   @endif
                </div>
             </div>

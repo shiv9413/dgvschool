@@ -53,6 +53,20 @@
             </a>
 
          </li>
+         
+         <li class=" ">
+
+            <a href="{{route('admission-list')}}" data-i18n="nav.form-wizard.main">
+
+            <span class="pcoded-micon"><i class="ti-home"></i></span>
+
+            <span class="pcoded-mtext">{{__('Admissions')}}</span>
+
+            <span class="pcoded-mcaret"></span>
+
+            </a>
+
+         </li>
 
          <li class="pcoded-hasmenu">
 

@@ -13,6 +13,7 @@ use App\Http\Controllers\CmsController;
 use App\Http\Controllers\TestimonialsController;
 use App\Http\Controllers\JobsController;
 use App\Http\Controllers\SeekersController;
+use App\Http\Controllers\AdmissionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -104,3 +105,6 @@ Route::get('/filter-states',[CmsController::class, 'filterStates'])->name('filte
 Route::get('/filter-cities',[CmsController::class, 'filterCities'])->name('filter-cities');
 Route::get('/{slug}',[CmsController::class, 'index'])->name('cms.page');
 
+Route::post('/submit-admission-form',[AdmissionController::class, 'submitAdmissionForm'])->name('admission-form');
+Route::get('admissions/list',[AdmissionController::class, 'list'])->name('admission-list');
+Route::get('admission/csv/export',[AdmissionController::class,'exportAdmissionData'])->name('exportAdmissions');
