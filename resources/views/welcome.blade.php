@@ -167,6 +167,9 @@ ul {
             transform: translateY(-100%); /* Scroll to the top */
         }
     }
+    .redirect_icon {
+      color:  rgba(3, 22, 67, 0.9); 
+    }
 </style>
 @endpush
 @section('content')
@@ -323,7 +326,7 @@ ul {
                             <b>Quote of the Week: “Education is the most powerful weapon which you can use to change the world” – Nelson Mandela</b>
                           </li>
                           <li>
-                            <b>Join the D.G.V. WhatsApp community for Instant Updates <a href="https://wa.me/918708773237?text=D.G.V.%20School" target="_blank"><i class="fas fa-share"></i>                              </a></b>
+                            <b>Join the D.G.V. WhatsApp community for Instant Updates <a href="https://whatsapp.com/channel/0029VaMxmba1Hsq4KRPT5f1Q" target="_blank"><i class="redirect_icon fas fa-share"></i>                              </a></b>
                           </li>
                           <li>
                             <b>D.G.V. Food Bank Inauguration on Dec 04, 2024 (Thursday)
