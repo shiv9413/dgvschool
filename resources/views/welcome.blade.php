@@ -109,19 +109,23 @@ ul {
 
 <style>
     .news-section {
-        background-color: rgba(3, 22, 67, 0.9); /* Dark blue with transparency */
-        color: #ffffff; /* White text */
+        background-color: #ffffff; /* Dark blue with transparency */
+        color:  rgba(3, 22, 67, 0.9); 
         border: 1px solid #ddd;
         padding: 15px;
         border-radius: 5px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: "Times New Roman";
     }
 
     .news-title {
+        text-align:center;
+        background-color: #ffffff;
+        color:  rgba(3, 22, 67, 0.9); 
         font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 15px;
-        color: #ffffff; /* White text for title */
+        font-family: "Times New Roman";
     }
 
     .news-container {
@@ -295,7 +299,7 @@ ul {
             <div class="col-md-6 col-sm-6 col-lg-6">
                   <img src="{{ asset('images/school-info.png') }}" alt="">
             </div>
-            <div class="col-md-6 col-sm-6 col-lg-6">
+            <div class="col-md-6 col-sm-6 col-lg-6 mt-3 mb-3">
               <div class="news-section">
                   <h3 class="news-title">Latest News</h3>
                   <div class="news-container">
@@ -304,13 +308,13 @@ ul {
                                <b>Admission will open soon!</b>
                           </li>
                           <li>
-                                  <b>Congratulations to Students holding high positions in the Olympiad.</b>
+                              <b>Congratulations to Students holding high positions in the Olympiad.</b>
                           </li>
                           <li>
-                                  <b>Download the New School Mobile App Today! <a href="https://play.google.com/store/apps/details?id=com.schoolknot.dgvschool" target="_blank"><i class="fas fa-share"></i>                                  </a></b>
+                              <b>Download the New School Mobile App Today! <a href="https://play.google.com/store/apps/details?id=com.schoolknot.dgvschool" target="_blank"><i class="fas fa-share"></i>                                  </a></b>
                           </li>
                           <li>
-                                  <b>Winter Break is from 01.01.2025 to 15.01.2025</b>
+                              <b>Winter Break is from 01.01.2025 to 15.01.2025</b>
                           </li>
                           <li>
                             <b>Annual Sports Function - 22nd December 2024</b>
@@ -327,7 +331,7 @@ ul {
                           </li>
                           <li>
                             <b>
-                            D.G.V. Annual Cultural Function on Dec 15, 2024 (Sunday)
+                            D.G.V. Annual Cultural Function on Dec 14, 2024 (Saturday)
                             </b>
                           </li>
                           <li>
