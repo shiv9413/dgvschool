@@ -314,7 +314,7 @@ ul {
                               <b>Congratulations to Students holding high positions in the Olympiad.</b>
                           </li>
                           <li>
-                              <b>Download the New School Mobile App Today! <a href="https://play.google.com/store/apps/details?id=com.schoolknot.dgvschool" target="_blank"><i class="fas fa-share"></i>                                  </a></b>
+                              <b>Download the New School Mobile App Today! <a href="https://play.google.com/store/apps/details?id=com.schoolknot.dgvschool" target="_blank"><i class="redirect_icon fas fa-share"></i>                                  </a></b>
                           </li>
                           <li>
                               <b>Winter Break is from 01.01.2025 to 15.01.2025</b>
