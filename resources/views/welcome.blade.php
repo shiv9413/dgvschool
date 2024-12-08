@@ -111,10 +111,12 @@ ul {
     .news-section {
         background-color: #ffffff; /* Dark blue with transparency */
         color:  rgba(3, 22, 67, 0.9); 
-        border: 1px solid #ddd;
+        border: 5px rgba(3, 22, 67, .9) double;
         padding: 15px;
-        border-radius: 5px;
+        /* border-radius: 5px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+         */
+         text-align : justify;
         font-family: "Times New Roman";
     }
 
@@ -302,7 +304,7 @@ ul {
             <div class="col-md-6 col-sm-6 col-lg-6">
                   <img src="{{ asset('images/school-info.png') }}" alt="">
             </div>
-            <div class="col-md-6 col-sm-6 col-lg-6 mt-3 mb-3">
+            <div class="col-md-6 col-sm-6 col-lg-6 mt-2 mb-1">
               <div class="news-section">
                   <h3 class="news-title">Latest News</h3>
                   <div class="news-container">
