@@ -221,17 +221,6 @@
               </div>
             </div>
             @endif
-
-            <div class="innerContent-wrap">
-              <div class="container">
-                <div class="cont_info ">
-                  <div class="row">
-                  
-                  </div>
-                </div>
-                
-              </div>
-            </div>
           <div class="row mt-2 mb-2">
               <div class="col-lg-6 col-sm-12" style="border: 5px solid #232936;">
                   <h3>Recent News</h3>
