@@ -12,7 +12,7 @@ use Form;
 
 class CmsController extends Controller
 {
-    public function index($slug){
+    public function index($slug=null){
 		if($slug == 'dashboard' || $slug == '' || $slug == null){
 			return view('welcome');
 		} else {
