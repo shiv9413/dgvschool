@@ -9,14 +9,29 @@
 @endpush
 @section('content')
 <!-- Inner Heading Start -->
-<div class="innerHeading-wrap">
+<div class="innerHeading-wrap" style="background-color: rgba(3, 22, 67, .9) !important; background:none;">
   <div class="container">
     <h1>{{__('Gallery')}}</h1>
   </div>
 </div>
 
 
-@if(null!==(module(4)))
+@php
+    $categories = [
+        'Baisakhi',
+        'Blood Donation',
+        'Children Day',
+        'Diwali',
+        'Independence Day',
+        'Janmashtami',
+        'Olympiad',
+        'Raising Awareness',
+        'Teacher Day',
+        'Trip to Mojoland',
+        'Trip to Pratapgarh',
+    ];
+@endphp
+<!-- @if(null!==(module(4)))
 <div class="gallery-wrap">
   <div class="container">
     <div class="row">
@@ -38,7 +53,7 @@
   </div>
 </div>
 @endif
-<!-- Inner Heading End --> 
+
 <div class="innerContent-wrap">
   <div class="container">
     <div class="cont_info ">
@@ -48,6 +63,23 @@
     </div>
     
   </div>
+</div> -->
+
+<div class="gallery-wrap">
+    <div class="container">
+        <div class="row">
+            @foreach($categories as $category)
+            <div class="col-lg-3 col-md-6 mb-4">
+            <a href="{{ url('/category/' . strtolower(str_replace(' ', '-', $category))) }}">
+                <div class="galleryImg text-center" style="border: 1px solid #ccc; border-radius: 12px;">
+                <img src="https://dgvschool.com/school/public/images/dgv_background_1714248357.png" alt="https://dgvschool.com/school/public/images/dgv_background_1714248357.png" style="height: 170px;">
+                <h5 style="margin-bottom: 2px; margin-top:2px;">{{ $category }}</h5>    
+                </a>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
 </div>
 @endsection
 
