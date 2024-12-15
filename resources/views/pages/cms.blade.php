@@ -206,7 +206,7 @@
                       @foreach(module(4) as $gallery)
                       @if(strtolower(str_replace(' ', '-', $gallery->title)) == 'news')
                       <div class="col-lg-3 col-md-6">
-                        <div class="galleryImg"><img src="{{asset('images/'.$gallery->image)}}" alt="{{$gallery->title}}" style=" border-radius: 12px;    height: 170px;">
+                        <div class="galleryImg"><img src="{{asset('images/'.$gallery->image)}}" alt="{{$gallery->title}}" style=" border-radius: 12px;">
                           <div class="portfolio-overley">
                             <div class="content"> <a href="{{asset('images/'.$gallery->image)}}" class="fancybox image-link" data-fancybox="images" title="{{$gallery->title}}"><i class="fas fa-search-plus"></i></a> </div>
                           </div>
