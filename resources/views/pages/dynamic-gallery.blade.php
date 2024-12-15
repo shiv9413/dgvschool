@@ -22,6 +22,7 @@
       <div class="col-lg-12">
         <div class="row">
           @foreach(module(4) as $gallery)
+          @if(strtolower(str_replace(' ', '-', $gallery->title)) == $slug)
           <div class="col-lg-3 col-md-6">
             <div class="galleryImg"><img src="{{asset('images/thumb/'.$gallery->image)}}" alt="{{$gallery->title}}" style=" border-radius: 12px;    height: 170px;">
               <div class="portfolio-overley">
@@ -29,6 +30,7 @@
               </div>
             </div>
           </div>
+          @endif
           @endforeach
           
         </div>
