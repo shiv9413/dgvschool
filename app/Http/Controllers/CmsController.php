@@ -85,4 +85,8 @@ class CmsController extends Controller
         $dd = Form::select('city', ['' => 'Select City'] + $cities, $city, array('id' => 'city', 'class' => 'form-control'));
         echo $dd;
     } 
+
+	public function getGallery($slug){
+		return view('pages.dynamic-gallery',compact('slug'));
+	}
 }

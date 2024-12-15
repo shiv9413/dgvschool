@@ -108,3 +108,5 @@ Route::get('/{slug}',[CmsController::class, 'index'])->name('cms.page');
 Route::post('/submit-admission-form',[AdmissionController::class, 'submitAdmissionForm'])->name('admission-form');
 Route::get('admissions/list',[AdmissionController::class, 'list'])->name('admission-list');
 Route::get('admission/csv/export',[AdmissionController::class,'exportAdmissionData'])->name('exportAdmissions');
+
+Route::get('gallery/{slug}',[CmsController::class, 'getGallery'])->name('dynamic.gallery');
