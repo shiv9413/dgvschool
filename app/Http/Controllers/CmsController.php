@@ -12,7 +12,7 @@ use Form;
 
 class CmsController extends Controller
 {
-    public function index($slug){
+    public function index($slug=null){
         $cms = ModulesData::where('slug',$slug)->where('status','active')->first();
         return view('pages.cms')->with('cms',$cms);
 
