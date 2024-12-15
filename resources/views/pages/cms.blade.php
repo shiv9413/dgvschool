@@ -198,7 +198,7 @@
           </div>
         <div class="container">
           @if(null!==(module(4)))
-            <div class="gallery-wrap">
+            <div class="">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-12">
