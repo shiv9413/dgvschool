@@ -29,7 +29,9 @@ use App\Http\Controllers\AdmissionController;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/dashboard', function(){
+  return view('welcome');
+});
 Route::get('gallery', function () { return view('gallery');});
 Route::post('ckeditor/upload',[CKEditorController::class, 'upload'])->name('ckeditor.image-upload');
 

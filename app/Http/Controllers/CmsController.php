@@ -13,9 +13,12 @@ use Form;
 class CmsController extends Controller
 {
     public function index($slug){
-        $cms = ModulesData::where('slug',$slug)->where('status','active')->first();
-        return view('pages.cms')->with('cms',$cms);
-
+		if($slug == 'dashboard' || $slug == '' || $slug == null){
+			return view('welcome');
+		} else {
+			$cms = ModulesData::where('slug',$slug)->where('status','active')->first();
+        	return view('pages.cms')->with('cms',$cms);
+		}
     }
 
     public function import(Request $request){
