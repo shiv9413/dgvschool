@@ -101,8 +101,8 @@ ul {
       font-family:IBMPlexSerif !important;
   }
 #border_custom {
-    border:5px rgba(3,22,67,.9) double; margin-left: 10px;
-    margin-right: 10px;
+    /* border:5px rgba(3,22,67,.9) double; margin-left: 10px;
+    margin-right: 10px; */
     text-align: justify;
 }  
 </style>
@@ -287,7 +287,7 @@ ul {
 
 
 <div class="about-wrap  " id="about" style="padding:0 !important;">
-  <div class="container">
+  <div class="container-fluid">
     <div class="about_sec">
         <div class="row">
                   @if(null!==(module(1))) 
