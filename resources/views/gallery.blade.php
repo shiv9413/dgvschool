@@ -106,7 +106,7 @@ $categories = [
             <a href="{{ url('/gallery/' . strtolower(str_replace(' ', '-', $category['name']))) }}">
                 <div class="galleryImg text-center" style="border: 1px solid #ccc; border-radius: 12px;">
                 @if(!empty($category['url']))
-                        <img src="{{ $category['url'] }}" alt="{{ $category['name'] }}" style="border-radius: 12px; height: 170px;">
+                        <img src="{{ $category['url'] }}" alt="{{ $category['name'] }}" style="border-radius: 12px;">
                 @else
                 <img src="https://dgvschool.com/school/public/images/dgv_background_1714248357.png" alt="https://dgvschool.com/school/public/images/dgv_background_1714248357.png" style="height: 170px;">
                 @endif
